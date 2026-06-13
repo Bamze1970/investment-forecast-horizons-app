@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>Investment Forecast</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Investment Forecast</h1>
+      <p class="sub">Dashboard + хоризонтни PIE графики</p>
+    </div>
+    <button id="installBtn" class="primary hidden">Инсталирай</button>
+  </header>
+
+  <main class="container">
+    <section id="dashboardView" class="view active"></section>
+    <section id="horizonView" class="view hidden"></section>
+  </main>
+
+  <nav class="bottom-nav">
+    <button id="navDashboard" class="nav-btn active">Dashboard</button>
+    <button id="navHorizons" class="nav-btn">Графики</button>
+    <button id="navSolana" class="nav-btn">Solana</button>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
